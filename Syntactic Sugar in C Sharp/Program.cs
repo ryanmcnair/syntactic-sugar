@@ -20,10 +20,8 @@ namespace Syntactic_Sugar_in_C_Sharp
         // Convert this readonly property to an expression member
         public string FormalName
         {
-            get
-            {
-                return $"{this.Name} the {this.Species}";
-            }
+            get => $"{this.Name} the {this.Species}";
+            
         }
 
         // Class constructor
@@ -36,31 +34,16 @@ namespace Syntactic_Sugar_in_C_Sharp
         }
 
         // Convert this method to an expression member
-        public string PreyList()
-        {
-            var commaDelimitedPrey = string.Join(",", this.Prey);
-            return commaDelimitedPrey;
-        }
+        public string PreyList() => string.Join(",", this.Prey);
+            
 
         // Convert this method to an expression member
-        public string PredatorList()
-        {
-            var commaDelimitedPredators = string.Join(",", this.Predators);
-            return commaDelimitedPredators;
-        }
+        public string PredatorList() => string.Join(",", this.Predators);
 
         // Convert this to expression method
-        public string Eat(string food)
-        {
-            if (this.Prey.Contains(food))
-            {
-                return $"{this.Name} ate the {food}.";
-            }
-            else
-            {
-                return $"{this.Name} is still hungry.";
-            }
-        }
+        public string Eat(string food) => this.Prey.Contains(food) ? $"{this.Name} ate the {food}." : $"{this.Name} is still hungry.";
+            
+        
     }
     class Program
     {

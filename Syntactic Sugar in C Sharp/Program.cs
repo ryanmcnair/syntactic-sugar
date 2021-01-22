@@ -80,7 +80,8 @@ namespace Syntactic_Sugar_in_C_Sharp
                 "Pretzels",
                 "Gummy Bears",
                 "Potato Chips",
-                "Almonds"
+                "Almonds",
+                "Nutter Butters"
             };
 
             Bug bug1 = new Bug("Ted", "Beetle", Predators, Prey);

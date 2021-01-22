@@ -71,7 +71,8 @@ namespace Syntactic_Sugar_in_C_Sharp
                 "Wolf",
                 "Hawk",
                 "Shark",
-                "Bear"
+                "Bear",
+                "Tiger"
             };
 
             List<string> Prey = new List<string>()
